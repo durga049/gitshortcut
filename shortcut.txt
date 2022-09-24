@@ -1,0 +1,56 @@
+git reset --hard HEAD^ --> undo recent(top most commit) commit and delete the changes --> it is reseting commit to delete current changes
+ 
+git reset --hard HEAD~2 --> undo recent(top most 2 commit) commit and delete the changes
+n=2 --> Note : git reset --hard should be the last option
+ 
+git reset HEAD <filename> --> move changes or files from staged area to unstage area of git
+ 
+git commit --amend --> it will not create new commit, it will apply changes to top most commit
+ 
+git checkout -- <filename> --> remove the changes from current directory
+ 
+git commit -a -m --> adding and committing, Note: no need to do git add
+ 
+git checkout <branch name> --> switch between branch or change branch
+ 
+git remote -v : show me origin path, for push and fetch, pull
+ 
+git fetch : fetch all the changes from remote but it will not merge to ur current local working directory
+ 
+git branch -r : list remote branches
+ 
+significance of .git/config : it will show the config of the current git repository
+ 
+git reset --soft HEAD^ : undo the top most commit and keep the changes
+ 
+git merge : merge 2 branches
+ 
+git status : show the status of the git repository
+ 
+git cherry-pick -x : pick the commit from one branch to another branch
+ 
+git revert: dont want changes, but we want the history, reverting the commit to get more visiblity of the failure
+ 
+git pull: update the local version with the remote version, will merge the remote change to local
+ 
+git clone:local copy of the remote repository for the first time
+ 
+git push :upload local changes or commit to remote
+(Note : please push to the branch you are currently working on, lets say you are working on
+feature branch : git push origin feature
+main branch : git push origin main)
+ 
+what is pull request: validation on merge 2 branches on remote repository
+ 
+what is gitflow workflow: Branching model for a release, or branhing strategy for a release
+feature --> develop --> release --> master
+                |                        |--> hotfix
+<---------------------------------|
+git show: show the changes of a particular commit 
+ 
+git log: show the history of git repository
+ 
+gitk: visualize git history and changes
+ 
+what is PAT token: why we use PAT token :
+ 
